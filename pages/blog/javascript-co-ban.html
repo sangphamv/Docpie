@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docpie - Bài viết</title>
+
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/GlobalStyle.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/blog/javascript-co-ban.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="inner">
+                <div class='logo'>
+                    <a class='logo-hover' href='../../index.html'>
+                        <img class='logo-hover-img' src='../../assets/images/logo.png' alt="" />
+                    </a>
+                </div>
+                <ul class='nav'>
+                    <li><a class='nav-item' href=''>Tài liệu</a></li>
+                    <li><a class='nav-item' href=''>Khóa học</a> </li>
+                    <li><a class='nav-item' href=''>Bài viết</a></li>
+                    <li><a class='nav-item' href=''>Phần mềm</a></li>
+                </ul>
+                <form class='search-box' action="" method="get">
+                    <svg xmlns="http://www.w3.org/2000/svg" class='search-box__icon bi-search' viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                        </path>
+                    </svg>
+                    <input class='search-box__input' type='search' placeholder='Tìm kiếm...' />
+                </form>
+            </div>
+        </header>
+        <div class="container">
+            <div class="main-heading">
+                <div class="main-heading-content">
+                    <ul>
+                        <li><a href="">Trang chủ</a>&#160;&#8250;</li>
+                        <li>&#160;<a href="">Blog</a>&#160;&#8250;</li>
+                        <li>&#160;<a href="">JavaScript Cơ Bản</a></li>
+                    </ul>
+                    <h1>JavaScript Cơ Bản</h1>
+                    <span>&#128505; Cập nhật lần cuối: 30-05-2024</span>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="main-content-nav">
+                    <h4>TỔNG QUAN BÀI VIẾT</h4>
+                    <ul>
+                        <li><a href="">1. Giới thiệu về JavaScript</a></li>
+                        <li><a href="">2. Biến</a></li>
+                        <li><a href="">3. Kiểu dữ liệu</a></li>
+                        <li><a href="">4. Chuyển đổi kiểu dữ liệu</a></li>
+                        <li><a href="">5. Cấu trúc dữ liệu</a></li>
+                        <li><a href="">6. Toán tử so sánh</a></li>
+                        <li><a href="">7. Vòng lặp</a></li>
+                        <li><a href="">8. Câu điều kiện</a></li>
+                        <li><a href="">9. Biểu thức & Toán tử</a></li>
+                        <li><a href="">10. Hàm</a></li>
+                    </ul>
+                </div>
+                <div class="main-content-blog">
+                    <h3>JavaScript Cơ Bản</h3>
+                    <h4>1. Giới thiệu về JavaScript</h4>
+                    <p>JavaScript ban đầu được tạo ra để trang web trông sinh động hơn. JavaScript có thể được viết ngay
+                        trong HTML và chạy tự động khi tải trang. Hiện tại JavaScript cũng được sử dụng trong nhiều môi
+                        trường khác (như Node.js).
+                    </p>
+                    <p>Ngày nay, JavaScript có một vị trí độc nhất là ngôn ngữ trình duyệt được áp dụng rộng rãi nhất,
+                        được tích hợp hoàn toàn với HTML/CSS.</p>
+                    <h4>2. Hiển thị dữ liệu ra màn hình</h4>
+                    <p>Các cách hiển thị dữ liệu JavaScript ra màn hình</p>
+                    <h5>2.1 Sử dụng HTML element <span class="code">innerHTML</span></h5>
+                    <code>
+                        document.getElementById("demo").innerHTML = 5 + 6;
+                    </code>
+                    <h5>2.2 Sử dụng HTML output <span class="code">document.write()</span></h5>
+                    <code>
+                        document.write(5 + 6);
+                    </code>
+                    <h5>2.3 Sử dụng alert box <span class="code">alert()</span></h5>
+                    <code>
+                        alert(5 + 6);                    
+                    </code>
+                    <h5>2.4 Sử dụng browser console <span class="code">console.log()</span></h5>
+                    <code>
+                        console.log(5 + 6);
+                    </code>
+                    <h4>3. Biến trong JavaScript</h4>
+                    <h5>3.1 Khai báo biến</h5>
+                    <p>Một biến (variable) sẽ được cấp phát một vùng nhớ trong bộ nhớ để lưu trữ dữ liệu. Để sử dụng các
+                        biến trong JavaScript, trước tiên chúng ta cần tạo nó, tức là khai báo một biến. Để khai báo các
+                        biến, chúng ta sử dụng một trong các từ khóa var, let hoặc const. Cú pháp khai báo biến:</p>
+                    <code>
+                        var x = 5;<br>
+                        let y = 'JavaScript';<br>
+                        const x = { 1, 2, 3 };
+                    </code>
+                    <h5>3.3 Khi nào sử dụng Var, Let hay Const</h5>
+                    <ul>
+                        <li>1. Luôn luôn khai báo biến</li>
+                        <li>2. Luôn luôn sử dụng Const nếu giá trị không thay đổi</li>
+                        <li>3. Luôn luôn sử dụng Const nếu là Mảng (Array) hay Đối tượng (Object)</li>
+                        <li>4. Chỉ sử dụng Let nếu không thể dùng Const</li>
+                        <li>5. Chỉ sử dụng Var nếu phải dùng trình duyệt web cũ</li>
+                    </ul>
+                    <h5>3.4 Quy ước đặt tên biến</h5>
+                    <p>Tên biến có thể chứa các chữ cái, chữ số, dấu gạch dưới _ và ký hiệu đô-la $.</p>
+                    <p>Tên biến phải bắt đầu bằng một ký tự.</p>
+                    <p>Tên biến cũng có thể bắt đầu bằng $ và _ .</p>
+                    <p>Tên biến trường hợp viết in hoa và viết thường (Y và y là các biến khác nhau)</p>
+                    <p>Các từ khóa (keywords) không thể được sử dụng làm tên biến.</p>
+                    <h5>3.5 Các kiểu dữ liệu hay gặp</h5>
+                    <p>Kiểu dữ liệu</p>
+                    <p><b>String - Chuỗi</b></p>
+                    <p><b>Number - Số</b></p>
+                    <p><b>Bigint</b></p>
+                    <p><b>Boolean</b></p>
+                    <p><b>Undefined - Không xác định</b></p>
+                    <p><b>Null - Rỗng</b></p>
+                    <p><b>Symbol</b></p>
+                    <p><b>Object - Đối tượng</b></p>
+                    <code>
+                        // Numbers:<br>
+                        let length = 16;<br>
+                        let weight = 7.5;<br>
+                        <br>
+                        // Strings:<br>
+                        let color = "Yellow";<br>
+                        let lastName = "Johnson";<br>
+                        <br>
+                        // Booleans<br>
+                        let x = true;<br>
+                        let y = false;<br>
+                        <br>
+                        // Object:<br>
+                        const person = {firstName:"John", lastName:"Doe"};<br>
+                        <br>
+                        // Array object:<br>
+                        const cars = ["Saab", "Volvo", "BMW"];<br>
+                        <br>
+                        // Date object:<br>
+                        const date = new Date("2022-03-25");
+                    </code>
+                    <h5>3.6 Lệnh, Khối lệnh, Từ khóa</h5>
+                    <code>
+                        var x = 5;<br>
+                        if (x > 10){<br>
+                            console.log('true');<br>
+                        }<br>
+                    </code>
+                    <p>var, if, console.log là các từ khóa</p>
+                    <p>var x = 5; là một câu lệnh, câu lệnh này kết thúc bằng dấu ;</p>
+                    <p>{...} là một khối lệnh</p>
+                    <h5>3.7 Phạm vi của biến (scope)</h5>
+                    <p>Có 3 loại: Phạm vi khối (block), Phạm vi hàm (function), Phạm vi toàn cục (Global).</p>
+                    <p>Let và Const cung cấp phạm vi khối (block scope)</p>
+                    <p>Các biến được khai báo trong {...} không thể sử dụng bên ngoài</p>
+                    <code>
+                        {<br>
+                            let x = 2;<br>
+                          }<br>
+                    </code>
+                    <p>Phạm vi cục bộ (local scope) & Phạm vi hàm (function scope)</p>
+                    <p>Các biến cục bộ chỉ được công nhận bên trong các hàm chứa chúng, các biến có cùng tên có thể được
+                        sử dụng trong các hàm khác nhau.
+                        Các biến cục bộ được tạo khi một hàm bắt đầu và xóa khi hàm được hoàn thành.</p>
+                    <code>
+                        // code here can NOT use carName<br>
+                        function myFunction() {<br>
+                        let carName = "Volvo";<br>
+                        // code here CAN use carName<br>
+                        }<br>
+                        // code here can NOT use carName<br>
+                    </code>
+                    <p>Phạm vi toàn cục (Global scope)</p>
+                    <p>Biến khi được khai báo với các từ kháo let, var và const bên ngoài hàm sẽ có phạm vi toàn cục. Có
+                        nghĩa là có thể truy cập từ bất cứ đâu.</p>
+                    <code>
+                        var x = 2;// Global scope<br>
+                        let x = 2;// Global scope<br>
+                        const x = 2;// Global scope
+                    </code>
+                </div>
+                <div class="main-content-aside">
+                    <h4>TỔNG QUAN BÀI VIẾT</h4>
+                    <ul>
+                        <li><a href="">1. Giới thiệu về JavaScript</a></li>
+                        <li><a href="">2. Biến</a></li>
+                        <li><a href="">3. Kiểu dữ liệu</a></li>
+                        <li><a href="">4. Chuyển đổi kiểu dữ liệu</a></li>
+                        <li><a href="">5. Cấu trúc dữ liệu</a></li>
+                        <li><a href="">6. Toán tử so sánh</a></li>
+                        <li><a href="">7. Vòng lặp</a></li>
+                        <li><a href="">8. Câu điều kiện</a></li>
+                        <li><a href="">9. Biểu thức & Toán tử</a></li>
+                        <li><a href="">10. Hàm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='home-nav'>
+                <div class='home-nav__grid'>
+                    <a href='../../documents' class='home-nav__grid-item'>
+                        <img class='home-nav__grid-item-img' src='../../assets/images/documents.png' alt="" />
+                        <h3 class='home-nav__grid-item-tittle'>Tài liệu</h3>
+                    </a>
+                    <a href='../../documents' class='home-nav__grid-item'>
+                        <img class='home-nav__grid-item-img' src='../../assets/images/courses.png' alt="" />
+                        <h3 class='home-nav__grid-item-tittle'>Khóa học</h3>
+                    </a>
+                    <a href='../../documents' class='home-nav__grid-item'>
+                        <img class='home-nav__grid-item-img' src='../../assets/images/blogs.png' alt="" />
+                        <h3 class='home-nav__grid-item-tittle'>Bài viết</h3>
+                    </a>
+                    <a href='../../documents' class='home-nav__grid-item'>
+                        <img class='home-nav__grid-item-img' src='../../assets/images/applications.png' alt="" />
+                        <h3 class='home-nav__grid-item-tittle'>Phần mềm</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class='inner'>
+                <div class='col-1'>
+                    <div class='logo'>
+                        <a class='logo-hover' href='../../index.html'>
+                            <img class='logo-hover-img' src='../../assets/images/logo.png' alt="" />
+                        </a>
+                    </div>
+                    <span class='col-1__text'>
+                        Trang web chia sẻ tài liệu và khóa học phục vụ cho việc học tập và nghiên cứu.
+                    </span>
+                </div>
+                <div class='col-2'>
+                    <ul class='col-2-nav'>
+                        <li><a class='col-2-nav-item' href=''>Tài liệu</a></li>
+                        <li><a class='col-2-nav-item' href=''>Khóa học</a></li>
+                        <li><a class='col-2-nav-item' href=''>Bài viết</a></li>
+                        <li><a class='col-2-nav-item' href=''>Phần mềm</a></li>
+                    </ul>
+                </div>
+                <div class='col-3'>
+                    <ul class='col-3-nav'>
+                        <li><a class='col-3-nav-item' href=''>FAQ</a></li>
+                        <li><a class='col-3-nav-item' href=''>Chính sách</a></li>
+                    </ul>
+                    <span class='col-3-list-icon'>
+                        <a class='col-3-list-icon-a' href="https://github.com/sangphamv" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>
+                        </a>
+                        <a class='col-3-list-icon-a' href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                            </svg>
+                        </a>
+                        <a class='col-3-list-icon-a' href="https://www.linkedin.com/in/sangphamv/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </a>
+                        <a class='col-3-list-icon-a' href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M165.9 132.5c-38.3 18-66.8 53.3-75.7 95.7c6.1 .1 62.4 .3 126.4-16.7c-22.7-40.2-47.1-74.1-50.7-79zm26.1-9.1c3.8 5.1 28.6 38.9 51 80c48.6-18.3 69.1-45.9 71.6-49.4C281 124.2 235.3 112.9 192 123.4zM277.4 382c-2-12-10-53.8-29.2-103.6c-55.1 18.8-93.8 56.4-108.1 85.6c40.5 31.6 93.3 36.7 137.3 18zM227.8 232.6C159.6 253 93.4 252.2 87.4 252c0 .7 0 1.4 0 2.1s0 1.4 0 2.1c0 35.1 13.3 67.1 35.1 91.4c22.2-37.9 67.1-77.9 116.5-91.8c-3.4-7.8-7.2-15.5-11.1-23.2zm72.5 136.9c30.7-20.7 52.5-53.6 58.6-91.6c-4.6-1.5-42.3-12.7-85.1-5.8c17.9 49.1 25.1 89.1 26.5 97.4zm-34.8-119c45.5-5.7 90.7 3.4 95.2 4.4c-.3-32.3-11.8-61.9-30.9-85.1c-2.9 3.9-25.8 33.2-76.3 53.9c4.8 9.8 8.3 17.8 12 26.8zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM224 416a160 160 0 1 1 0-320 160 160 0 1 1 0 320z" />
+                            </svg>
+                        </a>
+                        <a class='col-3-list-icon-a' href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M155.3 318.4c17.2 0 31.2-6.1 31.2-25.4c0-19.7-11.7-27.4-30.3-27.5h-46v52.9h45.1zm-5.4-129.6H110.3v44.8H153c15.1 0 25.8-6.6 25.8-22.9c0-17.7-13.7-21.9-28.9-21.9zm129.5 74.8h62.2c-1.7-18.5-11.3-29.7-30.5-29.7c-18.3 0-30.5 11.4-31.7 29.7zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zM349.5 185H271.7V166.1h77.8V185zM193.7 243.7c23.6 6.7 35 27.5 35 51.6c0 39-32.7 55.7-67.6 55.9H68v-192h90.5c32.9 0 61.4 9.3 61.4 47.5c0 19.3-9 28.8-26.2 37zm118.7-38.6c43.5 0 67.6 34.3 67.6 75.4c0 1.6-.1 3.3-.2 5c0 .8-.1 1.5-.1 2.2H279.5c0 22.2 11.7 35.3 34.1 35.3c11.6 0 26.5-6.2 30.2-18.1h33.7c-10.4 31.9-31.9 46.8-65.1 46.8c-43.8 0-71.1-29.7-71.1-73c0-41.8 28.7-73.6 71.1-73.6z" />
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class='footer-sub'>
+                <span class='footer-sub__span'>Copyright © 2024 Docpie. All rights reserved.</span>
+            </div>
+        </footer>
+    </div>
+    <script src="../../data/index.js"></script>
+</body>
+
+</html>

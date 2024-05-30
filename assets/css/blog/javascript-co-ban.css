@@ -1,0 +1,175 @@
+/*********************/
+/* container stylesheet */
+/*********************/
+.container {
+    padding-top: 80px;
+    width: 100%;
+}
+
+.main-heading {
+    max-width: 1728px;
+    height: 300px;
+    background-image: url('../../images/programming-background-with-person-working-with-codes-computer.jpg');
+    background-position: center 0;
+    margin: 0 auto;
+}
+
+.main-heading-content {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-heading-content ul {
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+}
+
+.main-heading-content ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.main-heading-content ul li a:hover {
+    border-bottom: solid 2px #fff;
+}
+
+.main-heading-content h1 {
+    color: #fff;
+}
+
+.main-heading-content span {
+    color: #fff;
+}
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 800px 300px;
+    justify-content: space-evenly;
+}
+
+.main-content-nav {
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+.main-content-nav h4 {
+    text-align: center;
+}
+
+.main-content-nav ul {
+    color: #333333;
+}
+
+.main-content-nav ul li {
+    padding: 5px 0;
+}
+
+.main-content-nav ul li a {
+    padding: 0;
+}
+
+.main-content-nav ul li a:hover {
+    color: #000;
+}
+
+.main-content-blog {
+    padding: 20px;
+}
+
+.main-content-blog code {
+    display: block;
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.6;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.code {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 1px;
+    font-family: monospace;
+}
+
+.main-content-blog p {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.main-content-blog h3 {
+    padding: 0;
+}
+
+.main-content-blog h4 {
+    padding: 10px 0;
+}
+
+.main-content-blog h5 {
+    padding: 5px 0;
+}
+
+.main-content-aside {
+    padding: 20px;
+}
+
+.home-nav {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+}
+
+.home-nav__grid {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+    grid-template-rows: 290px;
+    gap: calc(160px/3);
+}
+
+.home-nav__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: solid 3px #dbdbdb;
+    border-radius: 10px;
+    box-shadow: 4px 3px #f6f6f6, 3px 0 3px #f6f6f6;
+}
+
+.home-nav__grid-item-img {
+    width: 190px;
+}
+
+.home-nav__grid-item-tittle {
+    text-align: center;
+}
+
+.home-nav__grid-item:hover {
+    box-shadow: 4px 3px #dbdbdb, 3px 0 3px #dbdbdb;
+}
+
+.home-nav__grid-item:hover .home-nav__grid-item-tittle {
+    color: #3b82f6;
+}
+
+.home-nav__grid-item-img {
+    scale: 1.1;
+}
+
+.home-nav__grid-item-tittle {
+    color: #333333
+}
