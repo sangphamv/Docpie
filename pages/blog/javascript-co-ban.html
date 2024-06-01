@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docpie - Bài viết</title>
+    <title>JavaScript Cơ Bản Phần 1</title>
 
     <link rel="shortcut icon" href="../../assets/favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/GlobalStyle.css">
-    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/main-sub.css">
     <link rel="stylesheet" href="../../assets/css/blog/javascript-co-ban.css">
 </head>
 
@@ -43,9 +43,9 @@
                     <ul>
                         <li><a href="">Trang chủ</a>&#160;&#8250;</li>
                         <li>&#160;<a href="">Blog</a>&#160;&#8250;</li>
-                        <li>&#160;<a href="">JavaScript Cơ Bản</a></li>
+                        <li>&#160;<a href="">JavaScript Cơ Bản Phần 1</a></li>
                     </ul>
-                    <h1>JavaScript Cơ Bản</h1>
+                    <h1>JavaScript Cơ Bản Phần 1</h1>
                     <span>&#128505; Cập nhật lần cuối: 30-05-2024</span>
                 </div>
             </div>
@@ -53,28 +53,22 @@
                 <div class="main-content-nav">
                     <h4>TỔNG QUAN BÀI VIẾT</h4>
                     <ul>
-                        <li><a href="">1. Giới thiệu về JavaScript</a></li>
-                        <li><a href="">2. Biến</a></li>
-                        <li><a href="">3. Kiểu dữ liệu</a></li>
-                        <li><a href="">4. Chuyển đổi kiểu dữ liệu</a></li>
-                        <li><a href="">5. Cấu trúc dữ liệu</a></li>
-                        <li><a href="">6. Toán tử so sánh</a></li>
-                        <li><a href="">7. Vòng lặp</a></li>
-                        <li><a href="">8. Câu điều kiện</a></li>
-                        <li><a href="">9. Biểu thức & Toán tử</a></li>
-                        <li><a href="">10. Hàm</a></li>
+                        <li><a href="#p1_1">1. Giới thiệu về JavaScript</a></li>
+                        <li><a href="#p1_2">2. Hiển thị dữ liệu ra màn hình</a></li>
+                        <li><a href="#p1_3">3. Biến trong JavaScript</a></li>
+                        <li><a href="#p1_4">4 Các loại toán tử (Operators)</a></li>
                     </ul>
                 </div>
                 <div class="main-content-blog">
-                    <h3>JavaScript Cơ Bản</h3>
-                    <h4>1. Giới thiệu về JavaScript</h4>
+                    <h3>JavaScript Cơ Bản Phần 1</h3>
+                    <h4 id="p1_1">1. Giới thiệu về JavaScript</h4>
                     <p>JavaScript ban đầu được tạo ra để trang web trông sinh động hơn. JavaScript có thể được viết ngay
                         trong HTML và chạy tự động khi tải trang. Hiện tại JavaScript cũng được sử dụng trong nhiều môi
                         trường khác (như Node.js).
                     </p>
                     <p>Ngày nay, JavaScript có một vị trí độc nhất là ngôn ngữ trình duyệt được áp dụng rộng rãi nhất,
                         được tích hợp hoàn toàn với HTML/CSS.</p>
-                    <h4>2. Hiển thị dữ liệu ra màn hình</h4>
+                    <h4 id="p1_2">2. Hiển thị dữ liệu ra màn hình</h4>
                     <p>Các cách hiển thị dữ liệu JavaScript ra màn hình</p>
                     <h5>2.1 Sử dụng HTML element <span class="code">innerHTML</span></h5>
                     <code>
@@ -92,11 +86,11 @@
                     <code>
                         console.log(5 + 6);
                     </code>
-                    <h4>3. Biến trong JavaScript</h4>
+                    <h4 id="p1_3">3. Biến trong JavaScript</h4>
                     <h5>3.1 Khai báo biến</h5>
                     <p>Một biến (variable) sẽ được cấp phát một vùng nhớ trong bộ nhớ để lưu trữ dữ liệu. Để sử dụng các
                         biến trong JavaScript, trước tiên chúng ta cần tạo nó, tức là khai báo một biến. Để khai báo các
-                        biến, chúng ta sử dụng một trong các từ khóa var, let hoặc const. Cú pháp khai báo biến:</p>
+                        biến, chúng ta sử dụng một trong các từ khóa var, let hoặc const.</p>
                     <code>
                         var x = 5;<br>
                         let y = 'JavaScript';<br>
@@ -116,16 +110,7 @@
                     <p>Tên biến cũng có thể bắt đầu bằng $ và _ .</p>
                     <p>Tên biến trường hợp viết in hoa và viết thường (Y và y là các biến khác nhau)</p>
                     <p>Các từ khóa (keywords) không thể được sử dụng làm tên biến.</p>
-                    <h5>3.5 Các kiểu dữ liệu hay gặp</h5>
-                    <p>Kiểu dữ liệu</p>
-                    <p><b>String - Chuỗi</b></p>
-                    <p><b>Number - Số</b></p>
-                    <p><b>Bigint</b></p>
-                    <p><b>Boolean</b></p>
-                    <p><b>Undefined - Không xác định</b></p>
-                    <p><b>Null - Rỗng</b></p>
-                    <p><b>Symbol</b></p>
-                    <p><b>Object - Đối tượng</b></p>
+                    <h5>3.5 Các kiểu dữ liệu thường gặp</h5>
                     <code>
                         // Numbers:<br>
                         let length = 16;<br>
@@ -187,9 +172,51 @@
                         let x = 2;// Global scope<br>
                         const x = 2;// Global scope
                     </code>
-                    <h4>4 Các loại toán tử (Operators)</h4>
+                    <h4 id="p1_4">4 Các loại toán tử (Operators)</h4>
                     <h5>4.1 Toán tử gán (Assignment Operator)</h5>
                     <p>Toán tử gán dùng đến gán giá trị cho biến</p>
+                    <table>
+                        <tr>
+                            <th>Toán tử</th>
+                            <th>Ví dụ</th>
+                            <th>Tương đương</th>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>x = y</td>
+                            <td>x = y</td>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>x += y</td>
+                            <td>x = x + y</td>
+                        </tr>
+                        <tr>
+                            <td>-=</td>
+                            <td>x -= y</td>
+                            <td>x = x - y</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>x *= y</td>
+                            <td>x = x * y</td>
+                        </tr>
+                        <tr>
+                            <td>/=</td>
+                            <td>x /= y</td>
+                            <td>x = x / y</td>
+                        </tr>
+                        <tr>
+                            <td>%=</td>
+                            <td>x %= y</td>
+                            <td>x = x % y</td>
+                        </tr>
+                        <tr>
+                            <td>**=</td>
+                            <td>x **= y</td>
+                            <td>x = x ** y</td>
+                        </tr>
+                    </table>
                     <code>
                         // Assign the value 5 to x <br>
                         let x = 5;<br>
@@ -198,35 +225,132 @@
                         // Assign the value x + y to z:<br>
                         let z = x + y;
                     </code>
+
                     <h4>4.2 Toán tử số học (Arithmetic Operators)</h4>
+                    <table>
+                        <tr>
+                            <th>Toán tử</th>
+                            <th>Mô tả</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                        </tr>
+                        <tr>
+                            <td>**</td>
+                            <td>Exponentiation (ES2016)</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus (Division Remainder)</td>
+                        </tr>
+                        <tr>
+                            <td>++</td>
+                            <td>Increment</td>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>Decrement</td>
+                        </tr>
+                    </table>
                     <code>
-                        let x = 5;
-                        let y = 2;
-                        let a = x + y; //Addition<br>
-                        let b = x - y; //Subtraction<br>
-                        let c = x * y; //Multiplication<br>
-                        let d = x / y; //Division<br>
-                        let e = x % y; //Modulus<br>
-                        x++; //Increment<br>
-                        let f = x;
-                        x--; //Decrement <br>
-                        let g = x;
-                        let h = x ** 2; //Exponentiation (ES2016)
+                        let x = 5;<br>
+                        let y = 2;<br>
+                        let a = x + y; <br>
+                        let b = x - y; <br>
+                        let c = x * y; <br>
+                        let d = x / y; <br>
+                        let e = x % y; <br>
+                        x++; <br>
+                        let f = x;<br>
+                        x--; <br>
+                        let g = x;<br>
+                        let h = x ** 2;
                     </code>
+                    <h4>4.3 Toán tử so sánh (Comparison Operators)</h4>
+                    <table>
+                        <tr>
+                            <th>Toán tử</th>
+                            <th>Mô tả</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>equal to</td>
+                        </tr>
+                        <tr>
+                            <td>===</td>
+                            <td>equal value and equal type</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>not equal</td>
+                        </tr>
+                        <tr>
+                            <td>!==</td>
+                            <td>not equal value or not equal type</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>greater than</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                < </td>
+                            <td>less than</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>greater than or equal to</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <= </td>
+                            <td>less than or equal to</td>
+                        </tr>
+                        <tr>
+                            <td>?</td>
+                            <td>ternary operator</td>
+                        </tr>
+                    </table>
+                    <h4>4.3 Toán tử logic (Logical Operators)</h4>
+                    <table>
+                        <tr>
+                            <th>Toán tử</th>
+                            <th>Mô tả</th>
+                        </tr>
+                        <tr>
+                            <td>&&</td>
+                            <td>logical and</td>
+                        </tr>
+                        <tr>
+                            <td>||</td>
+                            <td>logical or</td>
+                        </tr>
+                        <tr>
+                            <td>!</td>
+                            <td>logical not</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="main-content-aside">
-                    <h4>TỔNG QUAN BÀI VIẾT</h4>
+                    <h4>BÀI VIẾT KHÁC</h4>
                     <ul>
-                        <li><a href="">1. Giới thiệu về JavaScript</a></li>
-                        <li><a href="">2. Biến</a></li>
-                        <li><a href="">3. Kiểu dữ liệu</a></li>
-                        <li><a href="">4. Chuyển đổi kiểu dữ liệu</a></li>
-                        <li><a href="">5. Cấu trúc dữ liệu</a></li>
-                        <li><a href="">6. Toán tử so sánh</a></li>
-                        <li><a href="">7. Vòng lặp</a></li>
-                        <li><a href="">8. Câu điều kiện</a></li>
-                        <li><a href="">9. Biểu thức & Toán tử</a></li>
-                        <li><a href="">10. Hàm</a></li>
+                        <li><a href="">JavaScript Cơ Bản Phần 1</a></li>
+                        <li><a href="">JavaScript Cơ Bản Phần 2</a></li>
+                        <li><a href="">JavaScript Cơ Bản Phần 3</a></li>
+                        <li><a href="">JavaScript Cơ Bản Phần 4</a></li>
                     </ul>
                 </div>
             </div>

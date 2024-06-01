@@ -2,7 +2,6 @@
 /* container stylesheet */
 /*********************/
 .container {
-    padding-top: 80px;
     width: 100%;
 }
 
@@ -15,7 +14,7 @@
 }
 
 .main-heading-content {
-    width: 600px;
+    width: 800px;
     height: 300px;
     margin: 0 auto;
     display: flex;
@@ -57,29 +56,37 @@
     justify-content: space-evenly;
 }
 
-.main-content-nav {
+.main-content-nav,
+.main-content-aside {
+    height: fit-content;
     padding: 20px;
     background-color: #f6f6f6;
 }
 
-.main-content-nav h4 {
+.main-content-nav h4,
+.main-content-aside h4 {
     text-align: center;
+    padding-bottom: 10px;
 }
 
-.main-content-nav ul {
+.main-content-nav ul,
+.main-content-aside ul {
     color: #333333;
 }
 
-.main-content-nav ul li {
-    padding: 5px 0;
+.main-content-nav ul li,
+.main-content-aside ul li {
+    padding: 10px 0;
 }
 
-.main-content-nav ul li a {
+.main-content-nav ul li a,
+.main-content-aside ul li a {
     padding: 0;
 }
 
-.main-content-nav ul li a:hover {
-    color: #000;
+.main-content-nav ul li a:hover,
+.main-content-aside ul li a:hover {
+    color: #3b82f6;
 }
 
 .main-content-blog {
@@ -120,6 +127,25 @@
 
 .main-content-blog h5 {
     padding: 5px 0;
+}
+
+.main-content-blog table {
+    background-color: #f6f6f6;
+    width: 500px;
+}
+
+.main-content-blog tr {
+    height: 30px;
+}
+
+.main-content-blog th {
+    background-color: #dbdbdb;
+    text-align: left;
+    padding: 5px;
+}
+
+.main-content-blog td {
+    padding: 5px;
 }
 
 .main-content-aside {
